@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styleForHome.css">
+</head>
+
+<body>
+    <div class="sidebar">
+        <span class="dash_name">Outbreak Dashboard</span>
+        <ul class="nav-links">
+            <li>
+                <a href="#" , class="active">
+                    <i class='bx bx-grid-alt'></i>
+                    <span class="links_name">HOME</span>
+                </a>
+            </li>
+            <li>
+                <a href="./covid.html">
+                    <i class='bx bx-grid-alt'></i>
+                    <span class="links_name">COVID-19</span>
+                </a>
+            </li>
+            <li>
+                <a href="./hiv.html">
+                    <i class='bx bx-box'></i>
+                    <span class="links_name">HIV</span>
+                </a>
+            </li>
+            <li>
+                <a href="./mers.html">
+                    <i class='bx bx-list-ul'></i>
+                    <span class="links_name">MERS</span>
+                </a>
+            </li>
+            <li>
+                <a href="./ndm.html">
+                    <i class='bx bx-pie-chart-alt-2'></i>
+                    <span class="links_name">NDM-CRE</span>
+                </a>
+            </li>
+            <li>
+                <a href="./lassa.html">
+                    <i class='bx bx-coin-stack'></i>
+                    <span class="links_name">Lassa Fever</span>
+                </a>
+            </li>
+            <li>
+                <a href="./yellowfever.html">
+                    <i class='bx bx-book-alt'></i>
+                    <span class="links_name">Yellow Fever</span>
+                </a>
+            </li>
+            <li>
+                <a href="./blackfungus.html">
+                    <i class='bx bx-user'></i>
+                    <span class="links_name">Black Fungus</span>
+                </a>
+            </li>
+            <li class="log_in">
+                <a href="#">
+                    <i class='bx bx-log-in'></i>
+                    <span class="links_name">Log in</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <section class="home-section-forHome">
+        <nav>
+
+            <div class="dashboard-home">Preface</div>
+            <div class="preface">This is a dashboard committed to recording and displaying real-time information about major diseases around the globe that are threatening the well-being of mankind. Down below are clickable links to introductory info about the diseases included.
+                For detailed statistics regarding each of them, click on the options on the sidebar. </div>
+
+        </nav>
+
+    </section>
+    <section class="info">
+        <div class="diseases">Diseases</div>
+    </section>
+
+    <!-- <div class="row">
+        <div class="card">
+            <img src="images/diseases/middle.jpeg" alt="Snow" style="width:100%">
+        </div>
+        <div class="card">
+            <img src="images/diseases/covid.jpeg" alt="Forest" style="width:100%">
+        </div>
+    </div> -->
+
+    <div class="row">
+        <div class="container">
+            <div class="column">
+                <img src="images/diseases/middle.jpeg" onclick="showText(this)" class="middle">
+            </div>
+        </div>
+        <div class="container">
+            <div class="columnRight">
+                <img src="images/diseases/covid.jpeg" onclick="showText(this)" class="covid">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="container">
+            <div class="column">
+                <img src="images/diseases/lassa.webp" onclick="showText(this)" class="middle">
+            </div>
+        </div>
+        <div class="container">
+            <div class="columnRight">
+                <img src="images/diseases/black.jpeg" onclick="showText(this)" class="covid">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="container">
+            <div class="column">
+                <img src="images/diseases/hiv.webp" onclick="showText(this)" class="middle">
+            </div>
+        </div>
+        <div class="container">
+            <div class="columnRight">
+                <img src="images/diseases/yellow.jpeg" onclick="showText(this)" class="covid">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="box">
+        <div class="shade" onclick="showText(this)"></div>
+        <p class="introText" id="middle" onclick="showText(this)">Just to demo middle</p>
+        <p class="introText" id="covid" onclick="showText(this)">Just to demo covid</p>
+    </div>
+
+    <script src="js/script.js"></script>
+
+
+</body>
+
+</html>
