@@ -187,6 +187,7 @@ img {
 /* Style our text overlay, center the text, and position it on top of our shade */
 
 .introText {
+    width: 80%;
     color: white;
     font-size: 32px;
     margin: 0;
