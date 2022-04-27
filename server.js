@@ -9,6 +9,8 @@ const User = require('./user.js'); // User Model
 
 const app = express();
 
+app.use(express.static("frontend"));
+
 // Configure Sessions Middleware
 app.use(session({
   secret: 'r8q,+&1LM3)CD*zAGpx1xm{NeQhc;#',
@@ -40,10 +42,10 @@ app.get('/', (req, res) => {
   });
   
   // Route to Dashboard
-  app.get('/dashboard', connectEnsureLogin.ensureLoggedIn(), (req, res) => {
-    res.sendFile(__dirname+'/frontend/home.html')
+  // app.get('/dashboard', connectEnsureLogin.ensureLoggedIn(), (req, res) => {
+  //   res.sendFile(__dirname+'/frontend/home.html')
     
-  });
+  // });
   
   // Route to Log out
   app.get('/logout', function(req, res) {
@@ -51,10 +53,14 @@ app.get('/', (req, res) => {
     res.redirect('/login');
   });
   
+  app.get('/home', (req, res) => {
+    res.sendFile(__dirname + '/frontend/home.html');
+  });
+
   // Post Route: /login
   app.post('/login', passport.authenticate('local', { failureRedirect: '/register' }),  function(req, res) {
       console.log(req.user)
-      res.redirect('/dashboard');
+      res.redirect('/home');
   });
 
   app.get('/register', (req, res) => {
