@@ -1,9 +1,51 @@
 <!DOCTYPE html>
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <html lang="en">
-  <head>
-	<title>Welcome Home</title>
-  </head>
-  <body>
-	<a href="/login">Please Login Here!</a>
-  </body>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+    .fuckme {
+        width: 70%;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .fuckme p {
+        color: white;
+        font-size: 40px;
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    .but {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        transition: all 0.25s ease-in-out;
+    }
+    
+    .but:hover {
+        background-color: #1a237e;
+        transition: all 0.25s ease-in-out;
+    }
+</style>
+
+<body style="background-color: #0d47a1;">
+    <div class="fuckme" style="top: 100px;">
+        <p>Welcome to Global Pandemics Tracker!</p>
+        <p>欢迎来到全球传染病追踪器!</p>
+        <p>Bienvenida al rastreador de pandemias globales!</p>
+    </div>
+    <a href="/login">
+
+        <div class=" but" style="width: 30%; height: 80px; border-radius: 6px; top: 100px;">
+            <p style="text-align: center; font-size: 20px;position: relative; top: 23px;">Please Login Here!</p>
+        </div>
+    </a>
+</body>
+
 </html>
