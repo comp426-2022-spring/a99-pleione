@@ -1,18 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-	<title>Example Login Form</title>
-  </head>
-  <body>
-	<form action="/login" method="post">
-  	  <!-- user input-->
-  	  Username:<br>
-  	  <input type="text" name="username" placeholder="Username" required><br><br>
-  	  Password:<br>
-  	  <input type="password" name="password" placeholder="Password" required><br><br>
-  	  <!-- submit button -->
-  	  <input type="submit" value="login">
-	  <a href="/register">Don't have an account?</a>	
-	</form>
-  </body>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<head>
+    <title>Example Login Form</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+    body {
+        font-family: 'Poppins', sans-serif
+    }
+    
+    div {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        top: 100px;
+        width: 50%;
+    }
+</style>
+
+<body style="background-color: #bbdefb;">
+    <div>
+        <p style="position: relative;text-align: center; font-size: 30px; bottom: 30px; font-size: 50px;"> Global Pandemics Tracker</p>
+        <form action="/login" method="post">
+            <!-- user input-->
+            Username:<br>
+            <input type="text" name="username" placeholder="Username" required><br><br> Password:
+            <br>
+            <input type="password" name="password" placeholder="Password" required><br><br>
+            <!-- submit button -->
+            <input type="submit" value="login">
+            <a href="/register" style=" margin-left:30px">Don't have an account?</a>
+        </form>
+    </div>
+</body>
+
 </html>
