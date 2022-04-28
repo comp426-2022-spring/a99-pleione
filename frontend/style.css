@@ -1,19 +1,21 @@
-
 /* Nice font, Google */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-*{
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
-.sidebar{
+
+.sidebar {
   position: fixed;
   height: 100%;
   width: 240px;
   background: #0A2558;
 }
-.sidebar .dash_name{
+
+.sidebar .dash_name {
   padding-top: 20px;
   color: #fff;
   font-size: 24px;
@@ -22,43 +24,52 @@
   display: flex;
   height: 80px;
 }
-.sidebar .nav-links{
+
+.sidebar .nav-links {
   margin-top: 30px;
 }
-.sidebar .nav-links li{
+
+.sidebar .nav-links li {
   height: 50px;
 }
-.sidebar .nav-links li a{
+
+.sidebar .nav-links li a {
   height: 100%;
   width: 100%;
   display: flex;
   align-items: center;
 }
-.sidebar .nav-links li a.active{
+
+.sidebar .nav-links li a.active {
   background: #081D45;
 }
-.sidebar .nav-links li a:hover{
+
+.sidebar .nav-links li a:hover {
   background: #081D45;
   transition: 0.3s ease-in-out;
 }
-.sidebar .nav-links li i{
+
+.sidebar .nav-links li i {
   min-width: 60px;
   text-align: center;
   font-size: 18px;
   color: #fff;
 }
-.sidebar .nav-links li a .links_name{
+
+.sidebar .nav-links li a .links_name {
   color: #fff;
   font-size: 15px;
   font-weight: 400;
   white-space: nowrap;
 }
-.sidebar .nav-links .log_in{
+
+.sidebar .nav-links .log_in {
   position: absolute;
   bottom: 10px;
   width: 100%;
 }
-.home-section{
+
+.home-section {
   position: relative;
   background: #f5f5f5;
   min-height: 100vh;
@@ -66,11 +77,13 @@
   left: 240px;
   transition: all 0.5s ease;
 }
-.sidebar.active ~ .home-section{
+
+.sidebar.active~.home-section {
   width: calc(100% - 60px);
   left: 60px;
 }
-.home-section nav{
+
+.home-section nav {
   display: flex;
   justify-content: space-between;
   height: 80px;
@@ -84,25 +97,30 @@
   padding: 0 20px;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 }
-.sidebar.active ~ .home-section nav{
+
+.sidebar.active~.home-section nav {
   left: 60px;
   width: calc(100% - 60px);
 }
-.home-section nav .sidebar-button{
+
+.home-section nav .sidebar-button {
   display: flex;
   align-items: center;
   font-size: 24px;
   font-weight: 500;
 }
-nav .sidebar-button i{
+
+nav .sidebar-button i {
   font-size: 35px;
   margin-right: 10px;
 }
-.home-section .home-content{
+
+.home-section .home-content {
   position: relative;
   padding-top: 104px;
 }
-.home-content .overview-boxes{
+
+.home-content .overview-boxes {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -110,7 +128,8 @@ nav .sidebar-button i{
   padding: 0 20px;
   margin-bottom: 26px;
 }
-.overview-boxes .box{
+
+.overview-boxes .box {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -118,23 +137,27 @@ nav .sidebar-button i{
   background: #fff;
   padding: 15px 14px;
   border-radius: 12px;
-  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
-.overview-boxes .box-topic{
+
+.overview-boxes .box-topic {
   font-size: 20px;
   font-weight: 500;
 }
-.home-content .box .number{
+
+.home-content .box .number {
   display: inline-block;
   font-size: 35px;
   margin-top: -6px;
   font-weight: 500;
 }
-.home-content .box .indicator{
+
+.home-content .box .indicator {
   display: flex;
   align-items: center;
 }
-.home-content .box .indicator i{
+
+.home-content .box .indicator i {
   height: 20px;
   width: 20px;
   background: #8FDACB;
@@ -145,17 +168,19 @@ nav .sidebar-button i{
   font-size: 20px;
   margin-right: 5px;
 }
-.box .indicator i.down{
+
+.box .indicator i.down {
   background: #e87d88;
 }
-.home-content .information-boxes{
+
+.home-content .information-boxes {
   display: flex;
   justify-content: space-between;
   /* padding: 0 20px; */
 }
 
 /* left box */
-.home-content .information-boxes .map-box{
+.home-content .information-boxes .map-box {
   width: 65%;
   background: #fff;
   padding: 20px 30px;
@@ -163,17 +188,20 @@ nav .sidebar-button i{
   border-radius: 12px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
-.information-boxes .box .title{
+
+.information-boxes .box .title {
   font-size: 24px;
   font-weight: 500;
   /* margin-bottom: 10px; */
 }
-.information-boxes .box .button{
+
+.information-boxes .box .button {
   width: 100%;
   display: flex;
   justify-content: flex-end;
 }
-.information-boxes .box .button a{
+
+.information-boxes .box .button a {
   color: #fff;
   background: #0A2558;
   padding: 4px 12px;
@@ -185,7 +213,7 @@ nav .sidebar-button i{
 }
 
 /* Right box */
-.home-content .information-boxes .disease-stats{
+.home-content .information-boxes .disease-stats {
   width: 35%;
   background: #fff;
   padding: 20px 30px;
@@ -193,13 +221,15 @@ nav .sidebar-button i{
   border-radius: 12px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
-.information-boxes .disease-stats li{
+
+.information-boxes .disease-stats li {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 10px 0;
 }
-.information-boxes .disease-stats li a img{
+
+.information-boxes .disease-stats li a img {
   height: 40px;
   width: 40px;
   object-fit: cover;
@@ -207,14 +237,57 @@ nav .sidebar-button i{
   margin-right: 10px;
   background: #333;
 }
-.information-boxes .disease-stats li a{
+
+.information-boxes .disease-stats li a {
   display: flex;
   align-items: center;
   text-decoration: none;
 }
+
 .information-boxes .disease-stats li .topic,
-.figure{
+.figure {
   font-size: 17px;
   font-weight: 400;
   color: #333;
+}
+
+.dropbtn {
+  background-color: #0A2558;
+  color: white;
+  padding: 12px;
+  font-size: 14px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #0A2558;
 }
