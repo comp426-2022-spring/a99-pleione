@@ -133,5 +133,5 @@ app.post('/register', (req, res) => {
 })
 
 // assign port
-const port = 5000;
+const port = 3000;
 app.listen(port, () => console.log(`This app is listening on port ${port}`));
