@@ -61,11 +61,13 @@ app.get('/home', connectEnsureLogin.ensureLoggedIn(), (req, res) => {
 });
 
 // Post Route: /login
-app.post('/login', passport.authenticate('local', { failureRedirect: '/register' }), function(req, res) {
+app.post('/login', passport.authenticate('local', { failureRedirect: '/wrongPW' }), function(req, res) {
     console.log(req.user)
     res.redirect('/home');
 });
-
+app.get('/wrongPW', (req, res) => {
+    res.sendFile(__dirname + '/static/wrongPW.html');
+});
 app.get('/register', (req, res) => {
     res.sendFile(__dirname + '/static/registration.html');
 });
