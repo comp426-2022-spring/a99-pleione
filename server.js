@@ -59,6 +59,29 @@ app.get('/home', connectEnsureLogin.ensureLoggedIn(), (req, res) => {
 
     res.sendFile(__dirname + '/frontend/home.html');
 });
+app.get('/covid', connectEnsureLogin.ensureLoggedIn(), (req, res) => {
+
+    res.sendFile(__dirname + '/frontend/covid.html');
+});
+app.get('/hiv', connectEnsureLogin.ensureLoggedIn(), (req, res) => {
+
+    res.sendFile(__dirname + '/frontend/hiv.html');
+});
+app.get('/mers', connectEnsureLogin.ensureLoggedIn(), (req, res) => {
+
+    res.sendFile(__dirname + '/frontend/mers.html');
+});
+app.get('/lassa', connectEnsureLogin.ensureLoggedIn(), (req, res) => {
+
+    res.sendFile(__dirname + '/frontend/lassa.html');
+});
+app.get('/yellowfever', connectEnsureLogin.ensureLoggedIn(), (req, res) => {
+    res.sendFile(__dirname + '/frontend/yellowfever.html');
+});
+app.get('/blackfungus', connectEnsureLogin.ensureLoggedIn(), (req, res) => {
+
+    res.sendFile(__dirname + '/frontend/blackfungus.html');
+});
 
 // Post Route: /login
 app.post('/login', passport.authenticate('local', { failureRedirect: '/wrongPW' }), function(req, res) {
