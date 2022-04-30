@@ -71,11 +71,25 @@ app.get('/wrongPW', (req, res) => {
 app.get('/register', (req, res) => {
     res.sendFile(__dirname + '/static/registration.html');
 });
+app.get('/error', (req, res) => {
+    res.sendFile(__dirname + '/static/usernameExist.html');
+});
 
+
+async function handle(req, res) {
+    console.log("hello")
+    try {
+        await User.register({ username: req.body.username, active: false }, req.body.password);
+        req.logout();
+        res.redirect('/login');
+    } catch (error) {
+        console.log(error)
+        res.redirect('/error');
+
+    }
+}
 app.post('/register', (req, res) => {
-    User.register({ username: req.body.username, active: false }, req.body.password);
-    req.logout();
-    res.redirect('/login');
+    handle(req, res)
 })
 
 // assign port

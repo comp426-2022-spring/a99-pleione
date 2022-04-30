@@ -1,28 +1,29 @@
 {
-  "name": "a99-pleione",
-  "version": "0.0.1",
-  "description": "Pandemic/endemic tracker and informations",
-  "main": "server.js",
-  "scripts": {
-    "test": "node server.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/comp426-2022-spring/a99-pleione.git"
-  },
-  "author": "Pleione",
-  "license": "GPL-3.0-or-later",
-  "bugs": {
-    "url": "https://github.com/comp426-2022-spring/a99-pleione/issues"
-  },
-  "homepage": "https://github.com/comp426-2022-spring/a99-pleione#readme",
-  "dependencies": {
-    "connect-ensure-login": "^0.1.1",
-    "express": "^4.18.0",
-    "express-session": "^1.17.2",
-    "mongoose": "^6.3.1",
-    "passport": "^0.5.2",
-    "passport-local": "^1.0.0",
-    "passport-local-mongoose": "^7.0.0"
-  }
+    "name": "a99-pleione",
+    "version": "0.0.1",
+    "description": "Pandemic/endemic tracker and informations",
+    "main": "server.js",
+    "scripts": {
+        "run": "node server.js",
+        "test": "node server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/comp426-2022-spring/a99-pleione.git"
+    },
+    "author": "Pleione",
+    "license": "GPL-3.0-or-later",
+    "bugs": {
+        "url": "https://github.com/comp426-2022-spring/a99-pleione/issues"
+    },
+    "homepage": "https://github.com/comp426-2022-spring/a99-pleione#readme",
+    "dependencies": {
+        "connect-ensure-login": "^0.1.1",
+        "express": "^4.18.0",
+        "express-session": "^1.17.2",
+        "mongoose": "^6.3.1",
+        "passport": "^0.5.2",
+        "passport-local": "^1.0.0",
+        "passport-local-mongoose": "^7.0.0"
+    }
 }
