@@ -2,13 +2,15 @@
 
 ## Description
 
-This site is a Global Pandemics Tracker.  Pulling information from various sources and using Tableau
-maps, this site displays information about global pandemics visually and numerically.  For a more detailed breakdown of specific endpoints, see the /docs/ directory.
+This is the Global Pandemics Tracker.  Pulling information from various sources and using Tableau
+maps, this site displays information about global pandemics visually and numerically.  
+This is a dashboard committed to recording and displaying real-time information about major diseases around the globe that are threatening the well-being of mankind. 
+For a more detailed breakdown of specific endpoints, see the `/docs/` directory.
 
 ## Dependencies
 
-Dependencies can be viewed in /package.json and include `connect-ensure-login`, `express`,
-`mongoose`, `passport`, `passport-local`, and `passport-local-mongoose`.
+Dependencies can be viewed in `/package.json` and include `connect-ensure-login`, `express`,
+`mongoose`, `passport`, `passport-local`, `better-sqlite3`, and `passport-local-mongoose`
 
 Running this site locally also requires installing and running mongodb locally. (https://www.mongodb.com/docs/manual/installation/)
 
