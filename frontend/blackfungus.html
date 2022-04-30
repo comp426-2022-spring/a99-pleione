@@ -2,177 +2,182 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <div class="sidebar">
-    <span class="dash_name">Outbreak Dashboard</span>
-    <ul class="nav-links">
-      <li>
-        <a href="./home.html">
-          <i class='bx bx-grid-alt'></i>
-          <span class="links_name">HOME</span>
-        </a>
-      </li>
-      <li>
-        <a href="./covid.html">
-          <i class='bx bx-grid-alt'></i>
-          <span class="links_name">COVID-19</span>
-        </a>
-      </li>
-      <li>
-        <a href="./hiv.html">
-          <i class='bx bx-box'></i>
-          <span class="links_name">HIV</span>
-        </a>
-      </li>
-      <li>
-        <a href="./mers.html">
-          <i class='bx bx-list-ul'></i>
-          <span class="links_name">MERS</span>
-        </a>
-      </li>
-      <li>
-        <a href="./lassa.html">
-          <i class='bx bx-coin-stack'></i>
-          <span class="links_name">Lassa Fever</span>
-        </a>
-      </li>
-      <li>
-        <a href="./yellowfever.html">
-          <i class='bx bx-book-alt'></i>
-          <span class="links_name">Yellow Fever</span>
-        </a>
-      </li>
-      <li>
-        <a href="#" class="active">
-          <i class='bx bx-user'></i>
-          <span class="links_name">Black Fungus</span>
-        </a>
-      </li>
-      <!-- <li class="log_in">
+    <div class="sidebar">
+        <span class="dash_name">Outbreak Dashboard</span>
+        <ul class="nav-links">
+            <li>
+                <a href="./home.html">
+                    <i class='bx bx-grid-alt'></i>
+                    <span class="links_name">HOME</span>
+                </a>
+            </li>
+            <li>
+                <a href="./covid.html">
+                    <i class='bx bx-grid-alt'></i>
+                    <span class="links_name">COVID-19</span>
+                </a>
+            </li>
+            <li>
+                <a href="./hiv.html">
+                    <i class='bx bx-box'></i>
+                    <span class="links_name">HIV</span>
+                </a>
+            </li>
+            <li>
+                <a href="./mers.html">
+                    <i class='bx bx-list-ul'></i>
+                    <span class="links_name">MERS</span>
+                </a>
+            </li>
+            <li>
+                <a href="./lassa.html">
+                    <i class='bx bx-coin-stack'></i>
+                    <span class="links_name">Lassa Fever</span>
+                </a>
+            </li>
+            <li>
+                <a href="./yellowfever.html">
+                    <i class='bx bx-book-alt'></i>
+                    <span class="links_name">Yellow Fever</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="active">
+                    <i class='bx bx-user'></i>
+                    <span class="links_name">Black Fungus</span>
+                </a>
+            </li>
+            <li class="log_out">
+                <a href="http://localhost:5000/logout">
+                    <i class='bx bx-log-in'></i>
+                    <span class="links_name">Log out</span>
+                </a>
+            </li>
+            <!-- <li class="log_in">
         <a href="#">
           <i class='bx bx-log-in'></i>
           <span class="links_name">Log in</span>
         </a>
       </li> -->
-    </ul>
-  </div>
-  <section class="home-section">
-    <nav>
-      <div class="sidebar-button">
-        <span class="dashboard">Indian Black Fungus Information</span>
-      </div>
-    </nav>
-
-    <div class="home-content">
-      <div class="overview-boxes">
-        <div class="box">
-          <div class="right-side">
-            <div class="box-topic">New Cases</div>
-            <div class="number"># FROM API</div>
-            <div class="indicator">
-              <i class='bx bx-up-arrow-alt'></i>
-              <span class="text">Compared to previous day (pos/neg)?</span>
-            </div>
-          </div>
-        </div>
-        <div class="box">
-          <div class="right-side">
-            <div class="box-topic">New Deaths</div>
-            <div class="number"># FROM API</div>
-            <div class="indicator">
-              <i class='bx bx-up-arrow-alt'></i>
-              <span class="text">Compared to previous day (pos/neg)?</span>
-            </div>
-          </div>
-        </div>
-        <div class="box">
-          <div class="right-side">
-            <div class="box-topic">Total Cases</div>
-            <div class="number"># FROM API</div>
-            <div class="indicator">
-              <i class='bx bx-up-arrow-alt'></i>
-              <span class="text">% increase over 28 day period?</span>
-            </div>
-          </div>
-        </div>
-        <div class="box">
-          <div class="right-side">
-            <div class="box-topic">Total Deaths</div>
-            <div class="number"># FROM API</div>
-            <div class="indicator">
-              <i class='bx bx-up-arrow-alt'></i>
-              <span class="text">% increase over 28 day period?</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="information-boxes">
-        <div class="map-box">
-          <div class="map">
-            <img src="images/diseases/blackfungusmap.jpg"
-              alt="Mucormycosis infections around the world estimated by the LIFE portal" width="100%">
-          </div>
-        </div>
-        <div class="disease-stats box">
-          <div class="title">Disease Statistics</div>
-          <li>
-            <a href="#">
-              <span class="topic">R0 Figure</span>
-            </a>
-            <span class="figure">2-3</span>
-          </li>
-          <li>
-            <a href="#">
-              <span class="topic">Symptom Onset from Infection</span>
-            </a>
-            <span class="figure">2-14 Days</span>
-          </li>
-          <li>
-            <a href="#">
-              <span class="topic">Duration</span>
-            </a>
-            <span class="figure">5-20 days</span>
-          </li>
-          <li>
-            <a href="#">
-              <span class="topic">Prevention</span>
-            </a>
-            <!-- <span class="figure">Dropdown Menu?</span> -->
-            <div class="dropdown">
-              <button class="dropbtn">Dropdown Menu</button>
-              <div class="dropdown-content">
-                <a href="#">Wear a Face Mask</a>
-                <a href="#">Avoid Infected Water</a>
-                <a href="#">Avoid Areas With Lots of Dust or Soil</a>
-              </div>
-            </div>
-          </li>
-          <li>
-            <a href="#">
-              <span class="topic">Symptoms</span>
-            </a>
-            <!-- <span class="figure">Dropdown Menu?</span> -->
-            <div class="dropdown">
-              <button class="dropbtn">Dropdown Menu</button>
-              <div class="dropdown-content">
-                <a href="#">Fever</a>
-                <a href="#">Vomitting</a>
-                <a href="#">Blood in Stool</a>
-                <a href="#">Cough and Chest Pain</a>
-                <a href="#">Reddness Around Eyes</a>
-                <a href="#">Black Lesions on Face or Mouth</a>
-              </div>
-            </div>
-          </li>
-        </div>
-      </div>
+        </ul>
     </div>
-  </section>
+    <section class="home-section">
+        <nav>
+            <div class="sidebar-button">
+                <span class="dashboard">Indian Black Fungus Information</span>
+            </div>
+        </nav>
+
+        <div class="home-content">
+            <div class="overview-boxes">
+                <div class="box">
+                    <div class="right-side">
+                        <div class="box-topic">New Cases</div>
+                        <div class="number"># FROM API</div>
+                        <div class="indicator">
+                            <i class='bx bx-up-arrow-alt'></i>
+                            <span class="text">Compared to previous day (pos/neg)?</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="right-side">
+                        <div class="box-topic">New Deaths</div>
+                        <div class="number"># FROM API</div>
+                        <div class="indicator">
+                            <i class='bx bx-up-arrow-alt'></i>
+                            <span class="text">Compared to previous day (pos/neg)?</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="right-side">
+                        <div class="box-topic">Total Cases</div>
+                        <div class="number"># FROM API</div>
+                        <div class="indicator">
+                            <i class='bx bx-up-arrow-alt'></i>
+                            <span class="text">% increase over 28 day period?</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="right-side">
+                        <div class="box-topic">Total Deaths</div>
+                        <div class="number"># FROM API</div>
+                        <div class="indicator">
+                            <i class='bx bx-up-arrow-alt'></i>
+                            <span class="text">% increase over 28 day period?</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="information-boxes">
+                <div class="map-box">
+                    <div class="map">
+                        <img src="images/diseases/blackfungusmap.jpg" alt="Mucormycosis infections around the world estimated by the LIFE portal" width="100%">
+                    </div>
+                </div>
+                <div class="disease-stats box">
+                    <div class="title">Disease Statistics</div>
+                    <li>
+                        <a href="#">
+                            <span class="topic">R0 Figure</span>
+                        </a>
+                        <span class="figure">2-3</span>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="topic">Symptom Onset from Infection</span>
+                        </a>
+                        <span class="figure">2-14 Days</span>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="topic">Duration</span>
+                        </a>
+                        <span class="figure">5-20 days</span>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="topic">Prevention</span>
+                        </a>
+                        <!-- <span class="figure">Dropdown Menu?</span> -->
+                        <div class="dropdown">
+                            <button class="dropbtn">Dropdown Menu</button>
+                            <div class="dropdown-content">
+                                <a href="#">Wear a Face Mask</a>
+                                <a href="#">Avoid Infected Water</a>
+                                <a href="#">Avoid Areas With Lots of Dust or Soil</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="topic">Symptoms</span>
+                        </a>
+                        <!-- <span class="figure">Dropdown Menu?</span> -->
+                        <div class="dropdown">
+                            <button class="dropbtn">Dropdown Menu</button>
+                            <div class="dropdown-content">
+                                <a href="#">Fever</a>
+                                <a href="#">Vomitting</a>
+                                <a href="#">Blood in Stool</a>
+                                <a href="#">Cough and Chest Pain</a>
+                                <a href="#">Reddness Around Eyes</a>
+                                <a href="#">Black Lesions on Face or Mouth</a>
+                            </div>
+                        </div>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>
