@@ -1,5 +1,21 @@
 # a99 Final Project
 
+## Description
+
+This site is a Global Pandemics Tracker.  Pulling information from various sources and using Tableau
+maps, this site displays information about global pandemics visually and numerically.  For a more detailed breakdown of specific endpoints, see the /docs/ directory.
+
+## Dependencies
+
+Dependencies can be viewed in /package.json and include `connect-ensure-login`, `express`,
+`mongoose`, `passport`, `passport-local`, and `passport-local-mongoose`.
+
+Running this site locally also requires installing and running mongodb locally. (https://www.mongodb.com/docs/manual/installation/)
+
+## Using this site
+
+To run the site, ensure you have a mongodb session active, use `npm install` to install requirements and then use `npm run run` to start the server from /server.js.  
+
 ## UPDATE
 
 You don't need to accept this assignment since you are already assigned to teams. So, there is not assignment invite link for a99.

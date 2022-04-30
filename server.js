@@ -75,9 +75,8 @@ app.get('/error', (req, res) => {
     res.sendFile(__dirname + '/static/usernameExist.html');
 });
 
-
+// Async function to handle registratuion  and throw errors if they occur.
 async function handle(req, res) {
-    console.log("hello")
     try {
         await User.register({ username: req.body.username, active: false }, req.body.password);
         req.logout();
