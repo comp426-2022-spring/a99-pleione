@@ -53,7 +53,7 @@ app.get('/', (req, res) => {
     res.redirect('/login');
   });
   
-  app.get('/home', (req, res) => {
+  app.get('/home', connectEnsureLogin.ensureLoggedIn(),(req, res) => {
     res.sendFile(__dirname + '/frontend/home.html');
   });
 
