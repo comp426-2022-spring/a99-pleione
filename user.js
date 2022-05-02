@@ -4,9 +4,7 @@ const passportLocalMongoose = require('passport-local-mongoose');
 // connect to database
 mongoose.connect('mongodb://localhost/users',{
   useNewUrlParser: true,
-  useUnifiedTopology: true},
-  () => {
-    console.log('Connected to MongoDB');
+  useUnifiedTopology: true
 });
 // Create Model
 const Schema = mongoose.Schema;
@@ -17,5 +15,5 @@ const User = new Schema({
 });
 // Export Model
 User.plugin(passportLocalMongoose);
-
-module.exports = mongoose.model('userData', User, 'userData');
+const usr = mongoose.model('userData', User, 'userData')
+module.exports = [usr, mongoose]

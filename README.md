@@ -9,7 +9,7 @@ For a more detailed breakdown of specific endpoints, see the `/docs/` directory.
 
 ## Dependencies
 
-Dependencies can be viewed in `/package.json` and include `connect-ensure-login`, `express`,
+Dependencies can be viewed in `/package.json` and include `minimist`, `connect-ensure-login`, `express`,
 `mongoose`, `passport`, `passport-local`, `better-sqlite3`, and `passport-local-mongoose`
 
 Running this site locally also requires installing and running mongodb locally. (https://www.mongodb.com/docs/manual/installation/)
