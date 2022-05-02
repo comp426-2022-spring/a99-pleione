@@ -1,4 +1,6 @@
 const express = require('express'); // server software
+const min = require('minimist')
+let args = min(process.argv.slice(2))
 //const bodyParser = require('body-parser'); // parser middleware
 const session = require('express-session'); // session middleware
 const passport = require('passport'); // authentication
@@ -7,7 +9,7 @@ const connectEnsureLogin = require('connect-ensure-login'); // authorization
 const User = require('./user.js'); // User Model
 
 const app = express();
-const logdb = require('./database')
+const logdb = require('./database');
 
 // Configure Sessions Middleware
 app.use(session({
@@ -40,13 +42,12 @@ app.use((req, res, next)=>{
 app.use(express.urlencoded({ extended: false }));
 app.use(passport.initialize());
 app.use(passport.session());
-
 // Passport Local Strategy
-passport.use(User.createStrategy());
+passport.use(User[0].createStrategy());
 
 // To use with sessions
-passport.serializeUser(User.serializeUser());
-passport.deserializeUser(User.deserializeUser());
+passport.serializeUser(User[0].serializeUser());
+passport.deserializeUser(User[0].deserializeUser());
 
 // Route to Homepage
 app.get('/', (req, res) => {
@@ -119,7 +120,7 @@ app.get('/error', (req, res) => {
 // Async function to handle registratuion  and throw errors if they occur.
 async function handle(req, res) {
     try {
-        await User.register({ username: req.body.username, active: false }, req.body.password);
+        await User[0].register({ username: req.body.username, active: false }, req.body.password);
         req.logout();
         res.redirect('/login');
     } catch (error) {
@@ -134,4 +135,14 @@ app.post('/register', (req, res) => {
 
 // assign port
 const port = 5000;
-app.listen(port, () => console.log(`This app is listening on port ${port}`));
+app.listen(port, async () => {
+    console.log(`This app is listening on port ${port}`);
+    let connected = false
+    User[1].connection.on('open', () => {
+        console.log("MongoDB connected");
+        if (args["test"]) {
+            console.log("Test successful. Exiting...")
+            process.exit();
+        }
+    });
+});
